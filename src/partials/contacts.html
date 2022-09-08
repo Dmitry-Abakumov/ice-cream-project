@@ -1,0 +1,204 @@
+<section class="section contacts">
+  <a id="contacts"></a>
+  <div class="container contacts" id="contacts">
+    <h2 class="hidden-title">Contacts</h2>
+
+    <ul class="contacts-list">
+      <li class="contacts-list__item">
+        <p class="contacts-list__facility">Cafe</p>
+        <p class="contacts-list__city">Chicago</p>
+        <address class="contacts-list__address break-line">
+          <p>10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</p>
+        </address>
+        <ul class="timetable break-line">
+          <li class="timetable__item">
+            <p class="timetable__days">Monday - Friday</p>
+            <p class="timetable__work-time">06:00 AM - 10:00 PM</p>
+          </li>
+          <li class="timetable__item">
+            <p class="timetable__days">Saturday - Sunday</p>
+            <p class="timetable__work-time">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <ul class="contacts">
+          <li class="contacts__phone">
+            <a class="contacts__anchor" href="tel:+610383766284"
+              >+61(0) 383 766 284</a
+            >
+          </li>
+          <li class="contacts__email">
+            <a class="contacts__anchor" href="mailto:noreply@envato.co"
+              >noreply@envato.com</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="contacts-list__item">
+        <p class="contacts-list__facility">Foodtruck</p>
+        <p class="contacts-list__city">Los Angeles</p>
+        <address class="contacts-list__address break-line">
+          <p>1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</p>
+        </address>
+        <ul class="timetable break-line">
+          <li class="timetable__item">
+            <p class="timetable__days">Monday - Friday</p>
+            <p class="timetable__work-time">06:00 AM - 10:00 PM</p>
+          </li>
+          <li class="timetable__item">
+            <p class="timetable__days">Saturday - Sunday</p>
+            <p class="timetable__work-time">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <ul class="contacts">
+          <li class="contacts__phone">
+            <a class="contacts__anchor" href="tel:+610383766284"
+              >+61(0) 383 766 284</a
+            >
+          </li>
+          <li class="contacts__email">
+            <a class="contacts__anchor" href="mailto:noreply@envato.co"
+              >noreply@envato.com</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="contacts-list__item">
+        <p class="contacts-list__facility">Cafe</p>
+        <p class="contacts-list__city">New York</p>
+        <address class="contacts-list__address break-line">
+          <p>726 Sterling Pl, Brooklyn, NY 11222, USA</p>
+        </address>
+        <ul class="timetable break-line">
+          <li class="timetable__item">
+            <p class="timetable__days">Monday - Friday</p>
+            <p class="timetable__work-time">06:00 AM - 10:00 PM</p>
+          </li>
+          <li class="timetable__item">
+            <p class="timetable__days">Saturday - Sunday</p>
+            <p class="timetable__work-time">08:00 AM - 16:00 PM</p>
+          </li>
+        </ul>
+        <ul class="contacts-block">
+          <li class="contacts__phone">
+            <a class="contacts__anchor" href="tel:+610383766284"
+              >+61(0) 383 766 284</a
+            >
+          </li>
+          <li class="contacts__email">
+            <a class="contacts__anchor" href="mailto:noreply@envato.co"
+              >noreply@envato.com</a
+            >
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="buttons-container">
+      <button
+        type="button"
+        class="fill-button button button_location"
+        data-modal-open-location
+      >
+        Our Locations
+        <svg><use href="/src/images/icons.svg#btn_icon"></use></svg>
+      </button>
+      <button
+        type="button"
+        class="border-button button button_franchise"
+        data-modal-open-franchise
+      >
+        Franchise <svg><use href="/src/images/icons.svg#btn_icon"></use></svg>
+      </button>
+    </div>
+    <div class="backdrop is-hidden" data-modal-location>
+      <div class="modal contacts-modal">
+        <button type="button" class="modal-close-button" data-modal-close-location>
+          <svg>
+            <use href="/src/images/icons.svg#close_icon"></use>
+          </svg>
+        </button>
+
+        <div class="location-modal-window">
+          <h2 class="contacts-modal__title">Our Locations</h2>
+          <iframe
+            class="contacts-modal__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.793119616139!2d-87.7819291841282!3d41.7034015792363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e39ad302b2c19%3A0xc808e9b14d04eb2b!2s10340%20Ridgeland%20Ave%2C%20Chicago%20Ridge%2C%20IL%2060415%2C%20%D0%A1%D0%A8%D0%90!5e0!3m2!1sru!2sua!4v1662063708430!5m2!1sru!2sua"
+            style="border: 0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <a
+            class="contacts-modal__open-map-button button fill-button"
+            href="https://goo.gl/maps/z4pWE4UUHVHscqQw5"
+            target="_blank"
+            >Open map</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" data-modal-franchise>
+      <div class="modal contacts-modal">
+        <button type="button" class="modal-close-button" data-modal-close-franchise>
+          <svg>
+            <use href="/src/images/icons.svg#close_icon"></use>
+          </svg>
+        </button>
+
+        <div class="franchise-modal-window">
+          <h2 class="contacts-modal__title">
+            Thank you for your interest in owning an Ice Cream shop
+          </h2>
+          <p class="franchise__info">
+            Due to the overwhelming volume of franchise requests we are not
+            accepting new franchisee applications at this time. Once the
+            application process resumes, we will contact you for further
+            information. Please fill out the contact information below and we
+            will reach out for additional information. We appreciate your
+            patience.
+          </p>
+          <form class="franchise-form">
+            <input
+              type="text"
+              name="user_name"
+              class="franchise-form__input"
+              required
+              pattern="[a-zA-Zа-яА-Я]+"
+              minlength="2"
+              placeholder="Name"
+            />
+
+            <input
+              type="tel"
+              name="user_tel"
+              class="franchise-form__input"
+              required
+              pattern="\d{3}-\d{3}-\d{2}-\d{2}"
+              title="XXX-XXX-XX-XX"
+              placeholder="Phone"
+            />
+
+            <input
+              type="email"
+              name="user_email"
+              class="franchise-form__input"
+              required
+              placeholder="Email"
+            />
+
+            <textarea
+              name="user_message"
+              class="franchise-form__field-message"
+              placeholder="Comment"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="franchise-form__button fill-button button"
+            >
+              Done
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

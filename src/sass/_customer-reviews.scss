@@ -1,0 +1,321 @@
+.main-foto-up {
+    
+    @media screen and(min-width:768px) {
+        margin-top: -730px;
+        margin-bottom: 28px;
+     
+    }
+    
+    @media screen and(min-width:1200px) {
+        margin-top: -562px;
+        margin-bottom: 32px;
+    }
+
+    @media screen and(max-width:767px) {
+        margin-top: -850px;
+        margin-bottom: 32px;
+    }
+}
+
+
+.wrapper {
+    
+    @media screen and(min-width:768px) {
+        width: 705px;
+        height: 138px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 28px;
+    }
+    
+    @media screen and(min-width:1200px) {
+        height: 138px;
+        width: 968px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 32px;
+    }
+
+    @media screen and(max-width:767px) {
+        width: 280px;
+        height: 256px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 32px;
+    }
+
+    @media screen and(max-width:480px) {
+        width: 100%;
+        height: 256px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 32px;
+    }
+
+
+
+}
+
+.features__heading-up {
+    @media screen and(min-width:768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 545px;
+        height: 81px;
+        margin-top: 29px;
+        margin-bottom: 28px;
+        margin-left: 80px;
+        margin-right: 80px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 186%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FCFCFC;
+
+    }
+    
+    @media screen and(min-width:1200px) {
+        width: 821px;
+        height: 60px;
+        margin-top: 39px;
+        margin-bottom: 39px;
+        margin-left: 109px;
+        margin-right: 109px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 186%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FCFCFC;
+
+    }
+
+    @media screen and(max-width:767px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 202px;
+        height: 188.05px;
+        margin-top: 34px;
+        margin-bottom: 34px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 255%;
+        text-align: center;
+        color: #FCFCFC;
+    }
+
+    @media screen and(max-width:480px) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 202px;
+        height: 188.05px;
+        margin-top: 34px;
+        margin-bottom: 34px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 255%;
+        text-align: center;
+        color: #FCFCFC;
+    }
+
+
+}
+
+.slide-up {
+    
+    @media screen and(min-width:768px) {
+       margin-bottom: 495px;
+    }
+    
+    @media screen and(min-width:1200px) {
+        margin-bottom: 300px;
+    }
+
+    @media screen and(max-width:767px) {
+        margin-bottom: 470px;
+    }
+}
+
+.features__heading-down {
+    
+    @media screen and(min-width:768px) {
+       margin-top: 32px;
+       margin-bottom: 32px;
+    }
+    
+    @media screen and(min-width:1200px) {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    @media screen and(max-width:767px) {
+        margin-top: 30px;
+        margin-bottom: 14px;
+    }
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.slider {
+	background-color:  #84A178;
+    border-radius: 24px;
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+ 
+}
+
+.wrapper > input {
+	display: none;
+}
+
+.slides {
+	height: inherit;
+	position: absolute;
+	width: inherit;
+}
+
+.slide1 { background-color: #84A178;
+     }
+.slide2 { background-color: blueviolet; }
+.slide3 { background-color: darkgoldenrod }
+
+.wrapper .controls {   
+	display: flex;
+    justify-content: center;
+}
+
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	width: 12px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+    background: #D9D9D9;
+}
+
+.wrapper label:after {
+	content: " ";
+	display: block;
+	height: 12px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 12px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 12px;
+	position: relative;
+	width: 12px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: background ease-in-out .5s;
+	-moz-transition: background ease-in-out .5s;
+	-o-transition: background ease-in-out .5s;
+	transition: background ease-in-out .5s;
+}
+
+.wrapper label:not(:last-child) {
+    margin-right: 18px;
+}
+
+.wrapper label:hover, 
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3) {
+	background-color:  #84A178;
+}
+
+.slides {
+	height: inherit;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 0;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3 {
+	opacity: 1;
+	z-index: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+.features__heading-down {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    text-align: center;
+    color: #131313;
+ 
+}
+
+.main-foto {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+

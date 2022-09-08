@@ -1,0 +1,91 @@
+.advantages {
+    background-color: var(--background-color);
+    width: 100%;
+
+    padding-top: 20px;
+    padding-bottom: 60px;
+    @include tab {
+        padding-top: 30px;
+        padding-bottom: 204px;
+    }
+
+    @include desk {
+        padding-bottom: 180px;
+    }
+}
+
+.title_advantages {
+    display: none;
+}
+
+.advantages-list {
+    @include tab {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 22px;
+    }
+
+    @include desk {
+        gap: 32px;
+        justify-content: space-between;
+    }
+}
+
+.advantages-list__item {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.advantages-list__number {
+    margin-bottom: 18px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--primary-text-color); 
+}
+
+.advantages-list__text {
+    margin-bottom: 28px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.7;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.advantages-list__text.last {
+    margin-bottom: 0;
+}
+
+.advantages-list__number::before {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+    background-size: 36px, 50px;
+    background-repeat: no-repeat;
+    background-position: center, 0;
+    margin-bottom: 40px;
+    
+
+}
+
+.advantages-list__number--cow::before {
+    background-image: url(/src/images/advantages/cow.png), url(/src/images/advantages/circle.png);
+}
+
+.advantages-list__number--weight::before {
+    background-image: url(/src/images/advantages/weight.png), url(/src/images/advantages/circle.png);
+}
+
+.advantages-list__number--ice-cream::before {
+    background-image: url(/src/images/advantages/ice-cream.png), url(/src/images/advantages/circle.png);
+}

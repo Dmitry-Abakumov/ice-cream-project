@@ -1,0 +1,448 @@
+.products {    
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 65px;
+    background-image: url(../images/products/Frame1-mob.png); 
+    background-size: contain;
+}
+.products__label {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.products__title {
+    margin-bottom: 148px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.27;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.products__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 164px;
+}
+.products__item {
+    position: relative;
+}
+.products__suptitle {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.products__thumb {
+    padding-top: 125px;   
+    max-width: 400px;
+    height: 420px;
+    border-radius: 24px;    
+    transition: var(--transition-duration-and-funk);  
+    
+    &:hover {
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        transform: scale(1.01);
+    }
+}
+.products__circle {
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    content: '';
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top:-12px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+}
+.ice-cream {
+    background: #AEC6A5;    
+}
+.circle-ice-cream {   
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+    &::before {
+        content: '';
+        background-image: url(../images/products/kelsey-mob.jpg); 
+        background-size: cover;      
+    }
+}
+.ice-coffe {
+    background-color: #EFD478;        
+}
+.circle-ice-coffe {
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+
+    &::before {
+        content: '';
+        background-image: url(../images/products/pariwat-mob.jpg);
+        background-size: cover;
+    }
+} 
+.milkshakes {
+    background-color: #D6936D;
+}    
+.circle-milkshakes {
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+
+    &::before {
+        content: '';
+        background-image: url(../images/products/victor-rutka-mob.jpg);
+        background-size: cover;
+    }
+}
+.products__desc {   
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 14px;
+    line-height: 1.76;
+    text-align: center;
+    letter-spacing: 0.04em; 
+}
+.products__button {
+    display: block;  
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;    
+    width: 40px;
+    height: 20px;
+    background-image: url(../images/Arrow_black_icon.svg);
+    background-repeat: no-repeat;
+    transition: var(--transition-duration-and-funk);
+    border: none;
+
+    &:hover {
+        width: 50px;
+        height: 25px;
+        background-image: url(../images/Arrow_hover.svg);        
+    }
+    &:focus {
+        width: 50px;
+        height: 24px;
+        background-image: url(../images/Arrow_focus.svg);
+    }
+}
+.products__button-ice-cream {
+    margin-top: 100px;
+    background-color: #AEC6A5;     
+}
+.products__button-ice-coffe {
+    margin-top: 50px;
+    background-color: #EFD478;
+}
+.products__button-milkshakes {
+    margin-top: 50px;
+    background-color: #D6936D;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+        .products {
+            background-image: url(../images/products/Frame1-mob@2x.png); 
+        } 
+        .circle-ice-cream::before {
+            background-image: url(../images/products/kelsey-mob@2x.jpg); 
+        } 
+        .circle-ice-coffe::before {
+            background-image: url(../images/products/pariwat-mob@2x.jpg); 
+        }  
+        .circle-milkshakes::before {
+            background-image: url(../images/products/victor-rutka-mob@2x.jpg); 
+        }
+}
+@media screen and (min-width: 768px) {
+    .products {
+        max-width: 100%;
+        padding-top: 60px;
+        padding-bottom: 82px;
+        background-image: url(../images/products/Frame-tablet.png); 
+        background-size: cover;
+    } 
+    .products__label {
+        font-size: 22px;        
+    }
+    .products__title {
+        margin-bottom: 200px;
+        font-size: 34px;
+    }
+    .products__menu {
+        flex-direction: row;           
+        gap: 16px;
+        justify-content: center;
+    }
+    .products__thumb {
+        padding-top: 108px;
+        width: 224px;
+        height: 438px;
+    }
+    .circle-ice-cream::before {             
+        background-image: url(../images/products/kelsey-tablet.jpg);
+    }
+    .circle-ice-coffe::before {
+        background-image: url(../images/products/pariwat-tablet.jpg);
+    }
+    .circle-milkshakes::before {         
+        background-image: url(../images/products/victor-rutka-tablet.jpg); 
+    } 
+    .products__desc {   
+        margin-left: 26px;
+        margin-right: 26px;
+        margin-bottom: 60px;
+    }
+    .products__suptitle {
+        font-size: 22px;
+    }
+    .products__button-ice-cream {
+        margin-top: 105px;        
+       }
+    .products__button-ice-coffe {
+        margin-top: 45px;       
+    }
+    .products__button-milkshakes {
+        margin-top: 80px;       
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+        .products {
+            background-image: url(../images/products/Frame-tablet@2x.png); 
+        }
+        .circle-ice-cream::before {
+            background-image: url(../images/products/kelsey-tablet@2x.jpg); 
+        }
+        .circle-ice-coffe::before {
+            background-image: url(../images/products/pariwat-tablet@2x.jpg); 
+        }  
+        .circle-milkshakes::before {
+            background-image: url(../images/products/victor-rutka-tablet@2x.jpg); 
+        }
+}
+@media screen and (min-width: 1200px) {
+    .products {
+        max-width: 1920px;
+        padding-bottom: 66px;
+        background-image: url(../images/products/Frame-desktop.png);
+    }
+    .products__label {
+        font-size: 30px;        
+    }
+    .products__title {
+        margin-bottom: 303px;
+        font-size: 36px;
+    }
+    .products__menu {
+        gap: 32px;
+    }
+    .products__thumb {
+        padding-top: 166px;
+        width: 370px;
+        height: 535px;
+    }
+    .products__circle {
+        width: 300px;
+        height: 300px;        
+
+        &::before {
+            content: '';
+            width: 300px;
+            height: 300px;
+            top: -17px;
+        }
+    }    
+    .circle-ice-cream::before {             
+        background-image: url(../images/products/kelsey-desktop.jpg);
+    }
+    .circle-ice-coffe::before {
+        background-image: url(../images/products/pariwat-desktop.jpg);
+    }
+    .circle-milkshakes::before {         
+        background-image: url(../images/products/victor-desktop.jpg); 
+    } 
+    .products__desc {   
+        margin-left: 63px;
+        margin-right: 63px;
+        margin-bottom: 60px;
+        font-size: 16px;
+    }
+    .products__suptitle {
+        font-size: 30px;
+        margin-bottom: 65px;
+    }
+    .products__button-ice-cream {
+        margin-top: 100px;        
+       }
+    .products__button-ice-coffe {
+        margin-top: 75px;       
+    }
+    .products__button-milkshakes {
+        margin-top: 75px;       
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+        .products {
+            background-image: url(../images/products/Frame-desktop@2x.png);             
+        }
+        .circle-ice-cream::before {
+            background-image: url(../images/products/kelsey-desktop@2x.jpg); 
+        } 
+        .circle-ice-coffe::before {
+            background-image: url(../images/products/pariwat-desktop@2x.jpg);
+        }
+        .circle-milkshakes::before {         
+            background-image: url(../images/products/victor-desktop@2x.jpg); 
+        } 
+}
+.products-modal {
+    max-width: 285px;
+    height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: auto;
+}
+.products-modal__circle {
+    position: relative;
+    width: 132px;
+    height: 130.6px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+
+    &::before {
+        position: absolute;
+        top: -11px;
+        content: '';
+        width: 132px;
+        height: 130.6px;
+        border-radius: 50%;
+        background-image: url(../images/products/pexels.jpg);
+        background-size: contain;
+
+    }
+}
+.products-modal__title {
+    font-family: var(--secondary-font);    
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;  
+    text-align: center;
+    margin-bottom: 28px;
+    
+}
+.products-modal__value {
+    display: flex;
+    gap: 9px;
+    justify-content: center;
+    margin-top: 28px;
+    margin-bottom: 39px;
+    
+}
+.products-value-ellipse {
+    width: 53px;
+    height: 72px;
+    border: 2px solid #9CBE8F;
+    border-radius: 40px;
+}
+.products-value__item {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    text-align: center;
+}
+.products-value-circle { 
+    display: flex;  
+    align-items: center;
+    justify-content: center; 
+    width: 43px;
+    height: 43px;
+    margin-bottom: 8px;
+    background: #9CBE8F;
+    border-radius: 50%;
+    border: 2px solid #9CBE8F;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+    transform: translate(7%, -3%);
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 2.8;    
+}
+.modal-products__suptitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 24px;
+    
+}
+.products-ingredients {
+    margin-bottom: 37px;    
+    font-size: 14px;
+    line-height: 1.76;
+}
+.products-ingredients__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 11px;   
+}
+.products-modal__label {
+    margin-bottom: 16px;    
+}
+.products-modal__form {    
+    margin-bottom: 16px;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1920px),
+    screen and (min-resolution: 192dpi) and (max-width: 1920px),
+    screen and (min-resolution: 2dppx) and (max-width: 1920px) {
+        .products-modal__circle::before {
+            background-image: url(../images/products/pexels@2x.jpg) ;
+        }
+}
+@media screen and (min-width: 768px) {
+    .products-modal {
+        width: 528px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .products-value__item {
+       font-size: 12px;       
+    }
+    .products-value-ellipse {
+        width: 65px;
+        height: 90px;
+    }
+    .products-value-circle {    
+        width: 53px;
+        height: 53px;
+        font-size: 12px;
+    }
+    .products-modal__form {
+       margin-left: 80px;
+       margin-right: 80px;
+       margin-bottom: 32px;
+    }
+}

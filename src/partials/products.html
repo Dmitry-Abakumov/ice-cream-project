@@ -1,0 +1,103 @@
+<section class="section products">
+    <a id="products"></a>
+    <div class="container products__container">
+        <p class="products__label">100% natural</p>
+        <h2 class="products__title">products</h2>
+        <ul class="products__menu">
+            <li class="products__item">
+                <div class="products__thumb ice-cream">
+                    <div class="products__circle circle-ice-cream"></div>
+                    <h3 class="products__suptitle">ice cream</h3>
+                    <p class="products__desc">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
+                    <button class="products__button products__button-ice-cream" data-modal-open-products></button>                    
+                </div>
+            </li>
+            <li class="products__item">
+                <div class="products__thumb ice-coffe">
+                    <div class="products__circle circle-ice-coffe"></div>
+                    <h3 class="products__suptitle">ice coffee</h3>
+                    <p class="products__desc">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers</p>
+                    <button class="products__button products__button-ice-coffe"></button>                    
+                </div>
+            </li>
+            <li class="products__item">
+                <div class="products__thumb milkshakes">
+                    <div class="products__circle circle-milkshakes"></div>
+                    <h3 class="products__suptitle">milkshakes</h3>
+                    <p class="products__desc">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice</p>
+                    <button class="products__button products__button-milkshakes"></button>                    
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+</section>
+<div class="backdrop is-hidden" data-modal-products>
+    <div class="modal products-modal">
+      <button type="button" class="modal-close-button" data-modal-close-products>
+        <svg><use href="/src/images/icons.svg#close_icon"></use></svg>
+      </button>
+      <h2 class="products-modal__title">Chololate icecream</h2>
+      <div class="products-modal__circle"></div>
+      <ul class="products-modal__value">
+        <li class="products-value__item">
+            <div class="products-value-ellipse">
+                <p class="products-value-circle">320</p>
+                <p>kcal</p>
+            </div>
+        </li>
+        <li class="products-value__item">
+            <div class="products-value-ellipse">
+                <p class="products-value-circle">4g</p>
+                <p>Prote...</p>
+            </div>
+        </li>
+        <li class="products-value__item">
+            <div class="products-value-ellipse">
+                <p class="products-value-circle">8,2g</p>
+                <p>Fats</p>
+            </div>
+        </li>
+        <li class="products-value__item">
+            <div class="products-value-ellipse">
+                <p class="products-value-circle">40,4g</p>
+                <p>Carbs</p>
+            </div>
+        </li>
+      </ul>
+      <h3 class="modal-products__suptitle">Ingredients</h3>
+      <ul class="products-ingredients">
+        <li class="products-ingredients__item">
+            <p>Milk</p>
+            <p>100ml</p>
+        </li>
+        <li class="products-ingredients__item">
+            <p>Belgian chocolate</p>
+            <p>20g</p>
+        </li>
+        <li class="products-ingredients__item">
+            <p>Cream</p>
+            <p>150 ml</p>
+        </li>
+        <li class="products-ingredients__item">
+            <p>Cocoa powder</p>
+            <p>30g</p>
+        </li>
+        <li class="products-ingredients__item">
+            <p>Sugar</p>
+            <p>40g</p>
+        </li>
+        <li class="products-ingredients__item">
+            <p>Vanilla sugar</p>
+            <p>10g</p>
+        </li>
+      </ul>
+      <form class="products-modal__form">
+        <label class="products-modal__label"><input class="modal-input modal-input__name" type="text" placeholder="Name"></label>
+        <label class="products-modal__label"><input class="modal-input modal-input__phone" type="tel" placeholder="Phone"></label>
+        <label class="products-modal__label"><textarea class="modal-input modal-input__comment" name="Comment"
+                placeholder="Comment"></textarea></label>
+    </form>
+        <button class="modal-submit" type="button">Submit</button>
+    </div>
+  </div>

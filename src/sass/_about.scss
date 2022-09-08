@@ -1,0 +1,164 @@
+.about {
+    background-color: var(--background-color);
+    width: 100%;
+
+    padding-top: 60px;
+    padding-bottom: 20px;
+
+@include tab {
+    padding-bottom: 30px;
+}
+
+}
+
+.about__label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    margin-bottom: 12px;
+}
+
+.about__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.26;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    margin-bottom: 32px;
+}
+
+.about__content {
+
+    @include tab {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+        align-items: center;
+    }
+
+    @include desk {
+        gap: 100px;
+    }
+}
+
+.about__circle {
+    position: relative;
+    border-radius: 50%;
+    width: 278px;
+    height: 278px;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+
+    @include tab {
+        width: 330px;
+        height: 330px;
+    }
+
+    @include desk {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+.about__img {
+    position: absolute;
+    top: 22px;
+
+    @include tab {
+        top: 26px; 
+    }
+
+    @include desk {
+        top: 29px; 
+    }
+}
+
+.about__list {
+    @include tab {
+        width: 50%;
+    }
+
+}
+
+.about__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.76;
+
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color);
+    margin-top: 40px;
+    margin-bottom: 4px;
+
+    @include tab {
+        margin-top: 0;
+    }
+}
+
+.about__text-second {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.94;
+
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color);
+
+    margin-bottom: 20px;
+
+    @include tab {
+        margin-bottom: 4px;
+    }
+}
+
+.about__text-second.mob {
+    display: none;
+    @include tab {
+        display: block;
+        margin-bottom: 40px;
+    }
+}
+
+.about__btn {
+    width: 176px;
+    height: 44px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F8D24E;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #000000;
+    transition: background-color var(--transition-duration-and-funk);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.about__btn--icon {
+    stroke: var(--title-color);
+    width: 0.6em;
+    height: 0.6em;
+    margin-left: 8px;
+}

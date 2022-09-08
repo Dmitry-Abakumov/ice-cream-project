@@ -1,0 +1,53 @@
+<section class="hero">
+    <div class="container hero__container">
+        <h1 class="hero__title">
+            ice cream <br />
+            made with <br />
+            <span class="hero__title-text">passion</span> 
+        </h1>
+        <a href="#products" class="hero__products">Products</a>
+        <a href="#about" class="hero__recipe">How it's made?</a>
+        <ul class="hero__numb-list">
+            <li class="hero__numb-item">
+                <span class="hero__numb-text">16</span>
+                cafes
+            </li>
+            <li class="hero__numb-item">
+                <span class="hero__numb-text">23</span>
+                food trucks
+            </li>
+        </ul>
+        <picture>
+            <source media="(min-width: 1200px)" srcset=".././src/images/hero/hero-desk/ice-cream-desk.png,
+            .././src/images/hero/hero-desk/ice-cream-desk@2x.png 2x" width="642">
+
+            <source media="(min-width: 768px)" srcset=".././src/images/hero/hero-tab/ice-cream-tab.png,
+            .././src/images/hero/hero-tab/ice-cream-tab@2x.png 2x" width="379">
+
+            <source media="(max-width: 767px)" srcset=".././src/images/hero/hero-mob/ice-cream-mob.png,
+            .././src/images/hero/hero-mob/ice-cream-mob@2x.png 2x" width="276">
+
+            <img src=".././src/images/hero/hero-mob/ice-cream-mob.png" alt="Ice cream" class="hero__ice-cream-img">
+        </picture>
+        <div class="hero__pic-text-wrapper">
+            <picture>
+                <source media="(min-width: 1200px)" srcset=".././src/images/hero/hero-desk/serving-desk.png,
+                .././src/images/hero/hero-desk/serving-desk@2x.png 2x" width="225">
+
+                <source media="(min-width: 768px)" srcset=".././src/images/hero/hero-tab/serving-tab.png,
+                        .././src/images/hero/hero-tab/serving-tab@2x.png 2x" width="152">
+            
+                <img loading="lazy" src=".././src/images/hero/hero-tab/serving-tab.png" alt="Serving a ice cream"
+                    class="hero__serving-img">
+            </picture>
+            <p class="hero__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, soluta!
+            </p>
+        </div>
+        <button class="hero__arrow-btn">
+            <svg width="40" height="15">
+                <use href=".././src/images/icons.svg#icon-Arrow_white_icon" class="arrow-icon"></use>
+            </svg>
+        </button>
+    </div>
+</section>

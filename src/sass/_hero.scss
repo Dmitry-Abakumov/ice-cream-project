@@ -1,0 +1,353 @@
+.hero__container {
+    position: relative;
+
+    @media screen and (max-width: 767px) {
+        min-height: 392px;
+    }
+}
+
+.hero {
+    padding-top: 110px;
+    width: 100%;
+    min-height: 502px;
+    margin: 0 auto;
+
+    background-color: #84A178;
+
+    background-image: url(../images/hero/hero-mob/points-mob.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+
+    overflow: hidden;
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) and (max-width: 767px),
+(min-resolution: 2dppx) and (max-width: 767px) {
+    .hero {
+        background-image: url(../images/hero/hero-mob/points-mob@2x.png);
+        background-size: 329px;
+    }
+}
+
+.hero__title {
+    margin-bottom: 32px;
+
+    font-family: var(--secondary-font);
+    font-size: 26px;
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+}
+
+.hero__title-text {
+    font-size: 35px;
+}
+
+.hero__ice-cream-img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-47%);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        transform: translate(-47%, 10%);
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .hero__numb-list,
+    .hero__text,
+    .hero__arrow-btn {
+        display: none;
+    }
+
+    .hero__serving-img {
+        display: none;
+    }
+
+    .hero__products,
+    .hero__recipe {
+        position: relative;
+        z-index: 100;
+    }
+}
+
+.hero__products {
+    display: inline-block;
+    padding: 7px 11px;
+    margin-right: 16px;
+    border: solid 2px;
+    border-color: #F8D24E;
+    border-radius: 8px;
+
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.13;
+    color: #000000;
+
+    transition: border-color var(--transition-duration-and-funk),
+        color var(--transition-duration-and-funk);
+
+    &:hover {
+        border-color: var(--accent-color);
+    }
+
+    &:focus {
+        border-color: var(--accent-color);
+        color: var(--primary-text-color);
+    }
+
+    &:disabled {
+        border-color: #ABABAB;
+    }
+}
+
+.hero__recipe {
+    font-size: 8px;
+    line-height: 1.25;
+    font-weight: 600;
+    color: #F8D24E;
+    text-decoration: underline;
+    
+    transition: color var(--transition-duration-and-funk);
+
+    
+
+    &:hover {
+        color: var(--accent-color);
+    }
+
+    &:focus {
+        color: var(--primary-text-color);
+    }
+
+    &:disabled {
+        color: #ABABAB;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero__container {
+        min-height: 311px;
+    }
+
+    .hero {
+        padding-top: 104px;
+        min-height: 415px;
+
+        background-image: url(../images/hero/hero-tab/points-tab.png);
+        background-position: 50% 100%;
+    }
+
+    .hero__ice-cream-img {
+        left: 71%;
+    }
+
+    .hero__title {
+        font-size: 18px;
+        line-height: 1.28;
+
+    }
+
+    .hero__title-text {
+        font-size: 24px;
+    }
+
+    .hero__numb-list {
+        position: absolute;
+        top: -10px;
+        right: 32px;
+
+        font-size: 8px;
+        line-height: 1.25;
+        color: #ffffff;
+    }
+
+    .hero__numb-text {
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 1.2;
+        letter-spacing: 0.04em;
+        color: #000000;
+    }
+
+    .hero__numb-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        row-gap: 4px;
+    }
+
+    .hero__numb-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .hero__serving-img {
+        margin-bottom: 13px;
+        margin-top: 28px;
+        margin-right: 33px;
+
+        border-radius: 50%;
+        scale: 1;
+        transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            transform: rotate(180deg);
+            scale: 0.9;
+        }
+    }
+
+    .hero__pic-text-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero__text {
+        width: 150px;
+        color: #ffffff;
+    }
+
+    .hero__arrow-btn {
+        position: absolute;
+        left: 217px;
+        bottom: 32px;
+
+        padding: 0;
+        border: none;
+        background-color: transparent;
+
+        width: 40px;
+        height: 15px;
+    }
+
+    .hero__text {
+        margin-bottom: 20px;
+        font-size: 12px;
+        line-height: 1.4;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) and (min-width: 768px),
+(min-resolution: 2dppx) and (min-width: 768px) {
+    .hero {
+        background-image: url(../images/hero/hero-tab/points-tab@2x.png);
+        background-size: 767px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero__container {
+        min-height: 546px;
+    }
+
+    .hero {
+        padding-top: 118px;
+        min-height: 664px;
+
+        background-image: url(../images/hero/hero-desk/points-desk.png);
+
+    }
+
+    .hero__title {
+        font-size: 38px;
+        line-height: 1.26;
+    }
+
+    .hero__title-text {
+        font-size: 38px;
+    }
+
+    .hero__numb-list {
+        top: 8px;
+        right: 16px;
+
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .hero__numb-text {
+        font-size: 46px;
+    }
+
+    .hero__numb-item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .hero__serving-img {
+        margin-bottom: 65px;
+        margin-top: 42px;
+        margin-right: 14px;
+
+        border-radius: 50%;
+    }
+
+    .hero__text {
+        width: 200px;
+        font-size: 14;
+        line-height: 1.36;
+    }
+
+    .hero__arrow-btn {
+        left: 256px;
+        bottom: 111px;
+    }
+
+    .hero__products {
+        padding: 12px 34px;
+        margin-right: 34px;
+
+        font-size: 14px;
+        line-height: 1.29;
+    }
+
+    .hero__recipe {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) and (min-width: 1200px),
+(min-resolution: 2dppx) and (min-width: 1200px) {
+    .hero {
+        background-image: url(../images/hero/hero-desk/points-desk@2x.png);
+        background-size: 1200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     .hero__text {
+//         margin-bottom: 20px;
+//         font-size: 12px;
+//         line-height: 1.4;
+//     }
+// }

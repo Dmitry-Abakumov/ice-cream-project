@@ -1,0 +1,147 @@
+<header class="header">
+<div class="header-container container">
+        <a class="header-logo link" href="./index.html">
+            <picture>
+                <source srcset="./images/header/logo-desk@1x.png 1x,
+                                ./images/header/logo-desk@2x.png 2x" media="(min-width: 1200px)">
+            </picture>
+            <picture>
+                <source srcset="./images/header/logo-tab@1x.png 1x,
+                                ./images/header/logo-tab@2x.png 2x" media="(min-width: 768px)">
+            </picture>
+            <picture>
+                <source srcset="./images/header/logo-mobile@1x.png 1x,
+                                ./images/header/logo-mobile@2x.png 2x" media="(min-width: 480px)">   
+            </picture>
+            <img src="./images/header/logo-desk@1x.png" alt="ice-cream">
+        </a>
+<div class="navigation">
+    <ul class="navigation-list list">
+        <li class="navigation-list__item">
+                 <a href="index.html" class="navigation-list__link link ">Home</a>                
+            </li>
+        <li class="navigation-list__item">
+                <a href="#about" class="navigation-list__link link">About us</a>
+            </li>
+        <li class="navigation-list__item">
+                <a href="#about" class="navigation-list__link link">How it’s made?</a>
+            </li>
+        <li class="navigation-list__item">
+                <a href="#products" class="navigation-list__link link">Our products</a>
+            </li>
+        <li class="navigation-list__item">
+                <a href="#contacts" class="navigation-list__link link">Contact</a>
+            </li>
+    </ul>
+</div>
+        <button class="header-button__burger" type="button" data-menu-open-header>
+            <svg class="menu-open__icon" width="20" height="12" ><use href="./images/icons.svg#icon-Burger"></use></svg>
+        </button>
+        <button class="header-button__buy" type="button" data-modal-open-header>Buy now
+            <svg class="header-btn-icon" width="6" height="10" ><use href="./images/icons.svg#btn_icon"></use></svg>
+
+        </button>
+</div>
+<div class="mob-menu is-hidden"  data-menu-header>
+<div class="container">
+            <a class="header-logo link" href="./index.html">
+                <picture>
+                    <source srcset="./images/header/logo-desk@1x.png 1x,
+                                    ./images/header/logo-desk@2x.png 2x" media="(min-width: 1200px)">
+                                    
+                </picture>
+                <picture>
+                    <source srcset="./images/header/logo-tab@1x.png 1x,
+                                    ./images/header/logo-tab@2x.png 2x" media="(min-width: 768px)">
+                                    
+                </picture>
+                <picture>
+                    <source srcset="./images/header/logo-mobile@1x.png 1x,
+                                    ./images/header/logo-mobile@2x.png 2x" media="(min-width: 480px)">              
+                </picture>
+                <img src="./images/header/logo-desk@1x.png" alt="ice-cream">
+            </a>
+            <button class="menu-close" type="button" data-menu-close-header>
+                <svg class="menu-close__icon" width="20" height="20"><use href="./images/icons.svg#icon-Close_icon"></use></svg>
+            </button>
+            
+            <div class="mob-menu-content">
+    <ul class="mob-menu__list list">
+        <li class="mob-menu__item">
+                <a href="index.html" class="mob-menu__link link">Home</a>
+            </li>
+        <li class="mob-menu__item">
+                <a href="#about" class="mob-menu__link link" data-about-section>About us</a>
+            </li>
+        <li class="mob-menu__item">
+                <a href="#advantages" class="mob-menu__link link" data-advantages-section>How it’s made?</a>
+            </li>
+        <li class="mob-menu__item">
+                <a href="#products" class="mob-menu__link link" data-products-section>Our products</a>
+            </li>
+        <li class="mob-menu__item">
+                <a href="#contacts" class="mob-menu__link link" data-contacts-section>Contact</a>
+            </li>
+    </ul>
+    <button class="menu-button" type="button" data-modal-open-header data-modal-open-header-mobile>Buy now
+        <svg class="header-btn-icon" width="6" height="10">
+            <use href="./images/icons.svg#btn_icon"></use>
+        </svg>
+    
+    </button>
+    </div>
+
+    </div>
+</div>
+</header>
+
+
+<div class="backdrop-header is-hidden" data-modal-header data-modal-header-mobile> 
+<div class="header-modal" >
+    
+        <h2 class="header-modal__title">Buy now</h2>
+        <button type="button" width="16" height="16" class="modal-close-button" data-modal-close-header data-modal-close-header-mobile>
+            <svg>
+                <use href="/src/images/icons.svg#close_icon"></use>
+            </svg>
+        </button>
+        <ul class="header-modal-menu__list">
+            <li class="header-modal-menu__item">
+                <div class="header-modal-menu__ice_cream">
+                <div class="header-modal-menu__circle__One">
+                </div>
+                    <h2 class="header-modal-menu__text">ice cream</h2>
+                </div>
+                   
+                    
+                
+            </li>
+            <li class="header-modal-menu__item">
+                <div class="header-modal-menu__ice_coffee">
+                    <div class="header-modal-menu__circle__two">
+                    </div>
+                <h2 class="header-modal-menu__text">ice coffee</h2>
+                </div>
+            </li>
+            <li class="header-modal-menu__item">
+                <div class="header-modal-menu__milkshake">
+                    <div class="header-modal-menu__circle__three">
+                    </div>
+                    <h2 class="header-modal-menu__text">milkshake</h2>
+
+                </div>
+            </li>
+        </ul>
+        <form  class="modal-form">
+
+            <label class="header-modal__label"><input class="modal-input modal-input__name " type="text" placeholder="name"></label>
+            <label class="header-modal__label"><input class="modal-input modal-input__phone" type="tel" placeholder="Phone"></label>
+            <label class="header-modal__label"><textarea class="modal-input modal-input__comment" name="text" 
+                    placeholder="Comment"></textarea></label>
+            
+        </form>
+        <button class="modal-submit" type="button">Submit</button>
+    
+</div>
+
+</div>
